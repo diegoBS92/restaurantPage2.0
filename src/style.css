@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --skyBlue: rgb(0, 233, 250);
+    --cloud: rgb(196, 249, 253)
+}
+body {
+    background-color: var(--skyBlue);
+    font-family: hero;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+@font-face {
+    font-family: hero;
+    src: url(../src/Hero.otf);
+}
+
+#content {
+    height: 90vh ;
+    width: 90vw;
+    background-color: rgb(196, 249, 253);
+    display: flex;
+    flex-direction: column;
+    border: 4px solid gray;
+    border-radius: 10px;
+    
+
+}
+.header {
+    font-size:4rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    background-image: url(headerBg.png);
+    height: 30vh;
+    text-shadow: 0 0 10px var(--skyBlue);
+    color:  rgb(214, 214, 214);
+    border-radius: 10px;
+    border: 4px solid gray;
+}
+
+.main {
+    display: flex;
+    font-size:1.5rem;
+    height: 60vh;
+    border-radius: 10px;
+    gap: 5px
+}
+
+
+.side,.mainBg {
+    margin: 0;
+    border: 5px gray solid;
+    height: 90%;
+    border-radius: 10px;
+    padding: 0;
+    
+}
+.side {
+    width: 15vw;
+    display: flex;
+    
+}
+.mainBg {
+    display: flex;
+    padding: 10px 30px;
+    align-items: center;
+    width: 75vw;
+    justify-content: center;
+}
+
+.mainBgText {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    flex: auto;
+    
+}
+il {
+    padding: 10px ;
+    text-align: center;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 30vh
+}
+p {
+    text-align: center;
+}
+
+
+.active {
+    background-color: var(--skyBlue)
+}
